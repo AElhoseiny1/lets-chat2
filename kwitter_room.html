@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Start Chatting
+            </title>
+            
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+
+    <link href="kwitter_room.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="kwitter_room.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+       
+    </head>
+    <body>
+        <button id="logout" class="btn btn-danger btn btn-lg" onclick="logout()">Logout</button>
+        <h3 id="User-name"></h3>
+
+        <label for="addRoom">Room name</label>
+        <input type="text" id="addRoom" class="form-control form-control-sm" placeholder="Type in Room name">
+        <button class="btn btn-primary" onclick="addRoom()">Add Room</button>
+        <ul id="list"></ul>
+    </body>
+</html>
